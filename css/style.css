@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(./../assets/fonts/static/Inter-Regular.ttf) format('truetype'),
+		url(./../assets/fonts/static/Inter-SemiBold.ttf) format('truetype'),
+		url(./../assets/fonts/static/Inter-Bold.ttf) format('truetype');
+	font-weight: 400 600 700;
+}
+
+:root {
+	--ff-primary: 'Inter', sans-serif;
+
+	--color-white: hsl(0, 0%, 100%);
+	--color-off-black: hsl(0, 0%, 8%);
+
+	--color-primary-01: hsl(75, 94%, 57%);
+
+	--color-neutral-01: hsl(0, 0%, 20%);
+	--color-neutral-02: hsl(0, 0%, 12%);
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--color-off-black);
+	font-family: var(--ff-primary);
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+.card {
+	background-color: var(--color-neutral-02);
+	border-radius: 1rem;
+	text-align: center;
+	padding: 3rem 2rem;
+
+	width: 34rem;
+}
+
+.card__img-box {
+	margin-bottom: 3rem;
+}
+
+.card__img {
+	border-radius: 50%;
+	width: 10rem;
+	height: 10rem;
+	object-fit: cover;
+}
+
+.card__name {
+	color: var(--color-white);
+}
+
+.card__location {
+	color: var(--color-primary-01);
+	margin: 1rem 0 3rem;
+}
+
+.card__qoute {
+	color: var(--color-white);
+	font-size: 1.4rem;
+}
+
+.card__footer {
+	margin-top: 2.5rem;
+}
+
+.button-box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+
+.btn {
+	background-color: var(--color-neutral-01);
+	border-radius: 1rem;
+	font-weight: 700;
+	color: var(--color-white);
+	padding: 1.5rem 2rem;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	color: var(--color-off-black);
+	background-color: var(--color-primary-01);
+}
+
+@media (min-width: 768px) {
+	.card {
+		border-radius: 1.5rem;
+		width: 38rem;
+		padding: 4rem 3rem;
+	}
+
+	.card__img {
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.card__name {
+		font-size: 2.4rem;
+		letter-spacing: 1px;
+	}
+
+	.card__location {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.card__footer {
+		margin-top: 3rem;
+	}
+
+	.button-box {
+		row-gap: 2rem;
+	}
+
+	.btn {
+		font-size: 1.4rem;
+	}
+}
