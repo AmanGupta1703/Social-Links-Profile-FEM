@@ -28,12 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./output/desktop-preview.png)
+![](./output/mobile-preview.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/AmanGupta1703/Social-Links-Profile-FEM](https://your-live-site-url.com)
+- Live Site URL: [https://social-links-profile-fem-two.vercel.app/](https://your-live-site-url.com)
 
 ## My process
 
@@ -56,7 +57,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Social Links Profile](https://social-links-profile-fem-two.vercel.app/)
 - Frontend Mentor - [@AmanGupta1703](https://www.frontendmentor.io/profile/AmanGupta1703)
 - Twitter - [@thekunalgupta17](https://www.twitter.com/thekunalgupta17)
 
